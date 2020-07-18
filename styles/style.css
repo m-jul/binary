@@ -149,12 +149,47 @@ main div {
   font-size: 30px;
 }
 .alerts {
-  width: 400px;
+  width: 350px;
   position: fixed;
   bottom: 0;
-  right: 0;
-  height: 100%;
+  right: 50px;
+  height: calc(100% - 100px);
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+}
+.alerts .error,
+.alerts .success,
+.alerts .warning {
+  height: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+.alerts .error {
+  background: #ce0000a6;
+}
+.alerts .success {
+  background: #05710ea6;
+}
+
+.alerts .warning {
+  background: #cc8402b5;
+}
+.alerts p {
+  color: white;
+  margin: 0;
+}
+.alerts .status {
+  font-size: 25px;
+}
+.alerts .logo svg {
+  fill: white;
+  width: 40px;
+}
+.alerts .info {
+  width: 220px;
 }
